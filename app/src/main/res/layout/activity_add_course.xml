@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context="com.learning.insanes.attendencemaster.AddCourseActivity">
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Course Code" />
+
+    <EditText
+        android:id="@+id/edittext_course_code"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Your Course Code"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Course name" />
+
+    <EditText
+        android:id="@+id/edittext_course_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Your Course Name"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Teachers name" />
+
+    <EditText
+        android:id="@+id/edittext_teachers_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Your Teachers Name"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hour"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Minute" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <CheckBox
+            android:id="@+id/checkbox_sunday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="86dp"
+            android:layout_height="wrap_content"
+            android:text="Sunday : "/>
+
+        <Spinner
+            android:id="@+id/spinner_sunday_hour"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:entries="@array/spinner_hour"/>
+
+        <Spinner
+            android:id="@+id/spinner_sunday_minute"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:entries="@array/spinner_minute"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <CheckBox
+            android:id="@+id/checkbox_monday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="86dp"
+            android:layout_height="wrap_content"
+            android:text="Monday : "/>
+
+        <Spinner
+            android:id="@+id/spinner_monday_hour"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:entries="@array/spinner_hour"/>
+
+        <Spinner
+            android:id="@+id/spinner_monday_minute"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:entries="@array/spinner_minute"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <CheckBox
+            android:id="@+id/checkbox_tuesday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="86dp"
+            android:layout_height="wrap_content"
+            android:text="Tuesday : "/>
+
+        <Spinner
+            android:id="@+id/spinner_tuesday_hour"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:entries="@array/spinner_hour"/>
+
+        <Spinner
+            android:id="@+id/spinner_tuesday_minute"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:entries="@array/spinner_minute"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <CheckBox
+            android:id="@+id/checkbox_wednesday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="86dp"
+            android:layout_height="wrap_content"
+            android:text="Wednesday : "/>
+
+        <Spinner
+            android:id="@+id/spinner_wednesday_hour"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:entries="@array/spinner_hour"/>
+
+        <Spinner
+            android:id="@+id/spinner_wednesday_minute"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:entries="@array/spinner_minute"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <CheckBox
+            android:id="@+id/checkbox_thursday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="86dp"
+            android:layout_height="wrap_content"
+            android:text="Thursday : "/>
+
+        <Spinner
+            android:id="@+id/spinner_thursday_hour"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:entries="@array/spinner_hour"/>
+
+        <Spinner
+            android:id="@+id/spinner_thursday_minute"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:entries="@array/spinner_minute"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <CheckBox
+            android:id="@+id/checkbox_friday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="86dp"
+            android:layout_height="wrap_content"
+            android:text="Friday : "/>
+
+        <Spinner
+            android:id="@+id/spinner_friday_hour"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:entries="@array/spinner_hour"/>
+
+        <Spinner
+            android:id="@+id/spinner_friday_minute"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:entries="@array/spinner_minute"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <CheckBox
+            android:id="@+id/checkbox_saturday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="86dp"
+            android:layout_height="wrap_content"
+            android:text="Saturday : "/>
+
+        <Spinner
+            android:id="@+id/spinner_saturday_hour"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:entries="@array/spinner_hour"/>
+
+        <Spinner
+            android:id="@+id/spinner_saturday_minute"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:entries="@array/spinner_minute"/>
+    </LinearLayout>
+    <Button
+        android:id="@+id/button_submit_course"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ADD THIS COURSE"/>
+</LinearLayout>
+</ScrollView>
+
